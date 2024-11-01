@@ -1,0 +1,358 @@
+/*
+  
+Copyright (c) 2012 - 2013 Dave Carlile (email: david@willowridgesoftware.com)
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+
+*/
+
+.wrswl-help-list
+{
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+#wrswl-monthly-data
+{
+  margin: 10px;
+  margin-bottom: 20px;
+}
+
+#wrswl-edit-log-top, #wrswl-edit-log-bottom, #wrswl-add-log-top, #wrswl-add-log-bottom, #wrswl-select-date, #wrswl-select-report-date
+{
+  padding:3px;
+  margin:3px;
+}
+
+#wrswl-monthly-data-table 
+{
+  border: 1px solid #a0a0a0;
+  border-collapse:collapse;
+  table-layout: fixed;
+  font-size: small;
+  color: #303030;
+  min-width: 400px;
+}
+ 
+#wrswl-monthly-data-table th
+{
+  border: 1px solid #a0a0a0;
+  padding: 0.35em;
+  color: #303030;
+}
+
+#wrswl-monthly-data-table td
+{
+  border: 1px solid #a0a0a0;
+  padding: 6px;
+  vertical-align: top;
+}
+
+#wrswl-stats-table 
+{
+  border: 1px solid #a0a0a0;
+  border-collapse:collapse;
+  table-layout: fixed;
+  font-size: small;
+  color: #303030;
+  min-width: 400px;
+}
+ 
+#wrswl-stats-table th
+{
+  border: 1px solid #a0a0a0;
+  padding: 0.35em;
+  color: #303030;
+}
+
+#wrswl-stats-table td
+{
+  border: 1px solid #a0a0a0;
+  padding: 6px;
+  vertical-align: top;
+}
+
+
+#wrswl-rank-table 
+{
+  border: 1px solid #a0a0a0;
+  border-collapse:collapse;
+  table-layout: fixed;
+  font-size: small;
+  color: #303030;
+  min-width: 400px;
+}
+ 
+#wrswl-rank-table th
+{
+  border: 1px solid #a0a0a0;
+  padding: 0.35em;
+  color: #303030;
+}
+
+#wrswl-rank-table td
+{
+  border: 1px solid #a0a0a0;
+  padding: 6px;
+  vertical-align: top;
+}
+
+
+#wrswl-uninstall-confirmation-container
+{
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+#wrswl-uninstall-confirmation
+{
+  color: red;
+  margin-left: 6px; 
+}
+
+.wrswl-settings-section
+{
+  margin-bottom: 40px;
+}
+
+.wrswl-settings-label
+{
+  margin-left: 6px;
+}
+
+.wrswl-highlight
+{
+  background: #fff;
+}
+
+.wrswl-table-header-footer
+{
+	background:#f5f5f5;
+}
+
+
+#wrswl-settings-link
+{
+  font-size: x-small;
+}
+
+.wrswl-rowactions
+{
+  visibility: visible;
+  font-size: x-small;
+}
+
+
+.wrswl-list-edit
+{
+  border-collapse:collapse;
+}
+
+.wrswl-list-edit tr
+{
+  padding: 0px;
+  margin: 0px;
+  border: 0px solid;
+}
+
+.wrswl-list-edit td
+{
+  padding: 0.5em;
+  border: 0px solid;
+}
+
+.wrswl-list-edit tr.odd
+{
+  background:#f0f0f0;
+}
+
+.wrswl-list-edit a
+{
+  font-size: x-small;
+}
+
+
+/***** table columns, sizes - these have to be the first row so table-layout:fixed works *****/
+th.wrswl-date-row
+{
+  width: 65px;
+  padding: 0px;
+}
+
+th.wrswl-time-row
+{
+  width: 79px;
+  padding: 0px;
+}
+
+th.wrswl-distance-row
+{
+  width: 65px;
+  padding: 0px;
+}
+
+th.wrswl-type-row
+{
+  width:115px;
+  padding: 0px;
+}
+
+th.wrswl-location-row
+{
+  width:190px;
+  padding: 0px;
+}
+
+
+/***** table columns, normal display *****/
+
+td.wrswl-date-row
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+td.wrswl-time-row
+{
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+}
+
+td.wrswl-distance-row
+{
+  text-align: right;
+  margin: 0px;
+  padding: 0px;
+}
+
+td.wrswl-type-row
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+td.wrswl-location-row
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/***** table columns, edit mode *****/
+
+td.wrswl-date-edit
+{
+  text-align: center;
+}
+
+select.wrswl-date-edit
+{
+  width: 54px;
+  padding: 2px;
+  margin: 0px;
+}
+
+td.wrswl-time-edit
+{
+  text-align: center;
+}
+
+input.wrswl-time-edit
+{
+  width: 68px;
+  padding: 2px;
+  margin: 0px;
+}
+
+td.wrswl-distance-edit
+{
+  text-align: center;
+}
+
+input.wrswl-distance-edit
+{
+  width: 54px;
+  padding: 2px;
+  margin: 0px;
+}
+
+
+td.wrswl-type-edit
+{
+  text-align: center;
+}
+
+select.wrswl-type-edit
+{
+  width: 104px;
+  padding: 2px;
+  margin: 0px;
+}
+
+td.wrswl-location-edit
+{
+  text-align: center;
+}
+
+select.wrswl-location-edit
+{
+  width: 181px;
+  padding: 2px;
+  margin: 0px;
+}
+
+
+.error-text
+{
+  color: red;
+}
+
+
+.info-text
+{
+  color: blue;
+}
+
+
+.success-text
+{
+  color: green;
+}
+
+.half-width
+{
+  width: 50%;
+}
+
+
+.wrswl-log-view
+{
+  margin-bottom: 80px;
+}
+
+.wrswl-stats-view
+{
+  margin-bottom: 40px;
+}
+
+.wrswl-rank-view
+{
+  margin-bottom: 40px;
+}
